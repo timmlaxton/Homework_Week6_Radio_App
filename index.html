@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Radio App</title>
+  <img class="music">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/radio.js"></script>
+</head>
+<body>
+<form id="new-item-form">
+  <div id="form-wrapper">
+    <div class="form-item">
+      <label for="show" class="primary">Show</label>
+      <input type="text" id="show" required/>
+    </div>
+
+    <div class="form-item">
+      <label for="channell" class="primary">Channell</label>
+      <input type="text" id="channell" required/>
+      </div>
+
+      <div class="form-item">
+        <label for="catergory" class="primary">Catergory</label>
+        <select id="catergory">
+          <option value="" disabled selected></option>
+          <option value="Sport">Sport</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Science">Science</option>
+          <option value="Kids">Kids</option>
+        </select>
+      </div>
+    </div>
+    <input type="submit" value="save"/>
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+    <h1>Radio App</h1>
+    <div id="radio"></div>
+  </body>
+</html>
